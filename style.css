@@ -1,0 +1,245 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 12px;
+    gap: 35px;
+    font-size: 18px;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe083;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    width: 90%;
+    margin: 30px auto;
+    backdrop-filter: blur(8px);
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-size: 20px;
+    background: #ffe083;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.hero-btn:hover {
+    background: #fff2b0;
+    transform: translateY(-3px);
+}
+
+/* Containers */
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Course Cards */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.course-card {
+    padding: 25px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.course-card:hover {
+    transform: translateY(-7px) scale(1.02);
+}
+
+/* Form Box */
+.form-box {
+    width: 450px;
+    margin: auto;
+    background: rgba(255,255,255,0.10);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.form-box input,
+.form-box button {
+    width: 100%;
+    margin: 12px auto;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.form-box input {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #ddd;
+}
+
+.form-box input:focus {
+    outline: none;
+    border: 2px solid #ffe083;
+}
+
+.form-box button {
+    background: #ffe083;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.form-box button:hover {
+    background: #fff2b0;
+    transform: translateY(-2px);
+}
+
+/* Reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.review-card {
+    background: rgba(255,255,255,0.2);
+    padding: 22px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+/* Contact Map */
+.map {
+    width: 90%;
+    height: 320px;
+    border-radius: 12px;
+    margin: 25px auto 0;
+    display: block;
+    border: 3px solid rgba(255,255,255,0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        font-size: 26px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .form-box {
+        width: 90%;
+    }
+}
